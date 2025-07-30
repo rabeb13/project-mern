@@ -17,11 +17,16 @@ app.use(express.json());
 
 //middleware routes
 app.use("/api/user", require("./routes/user"));
+app.use("/api/product", require("./routes/product"));
 
 //3 create PORT 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT; 
+
+// app.get("/", (req, res) => {
+//   res.send("Backend API is running ✅");
+// });
 
 // 4 create a server 
 app.listen(PORT, (err) => {
-  err ? console.log(err) :  console.log(`Server is running on port ${PORT}..`)
+  err ? console.log(err) : console.log(`Server is running on port ${PORT}..`)
 });

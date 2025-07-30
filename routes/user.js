@@ -1,6 +1,6 @@
 // 1 require express
 const express = require('express');
-const { register,login } = require("../Controllers/user");
+const { register, login } = require("../Controllers/user");
 const {
     registerValidation,
     validation,
